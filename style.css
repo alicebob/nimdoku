@@ -1,0 +1,35 @@
+body {
+	background-color: white;
+}
+
+.board {
+    display: inline-block;
+    border-top: solid 2px black;
+    border-left: solid 2px black;
+}
+.row:nth-child(3n) {
+    border-bottom: solid 1px black;
+}
+.cell:nth-child(3n) {
+    border-right: solid 2px black;
+}
+
+.cell {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+.cell .clue {
+    font-weight: bold;
+}
+
+.selected {
+    background-color: yellow;
+}
